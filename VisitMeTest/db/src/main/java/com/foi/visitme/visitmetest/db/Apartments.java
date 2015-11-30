@@ -14,7 +14,7 @@ package com.foi.visitme.visitmetest.db;
         import com.google.gson.annotations.SerializedName;
 
 
-public class apartmani {
+public class Apartments {
 
     @SerializedName("success")
     @Expose
