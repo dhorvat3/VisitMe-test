@@ -16,6 +16,9 @@ public interface ApiMethods {
     @GET("/apartments_in_town.php")
     public void getApartments(@Query("id_town") String id_town, Callback<Apartments> callback);
 
+    @GET("/towns.php")
+    void getTowns(Callback<Town> callback);
+
 //    REGISTER
 //    @POST("/post_user.php")
 //    void setUser(@Body User_ user, Callback<Response> callback);
