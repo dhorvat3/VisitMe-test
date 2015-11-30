@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.foi.visitme.visitmetest.db.Apartment;
 import com.foi.visitme.visitmetest.db.Apartments;
 import com.foi.visitme.visitmetest.db.ApiMethods;
 
@@ -28,13 +29,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void success(Apartments apartments, Response response) {
                 TextView ispis=(TextView) findViewById(R.id.ispis);
-                ispis.setText(apartments.getApartment().get(0).getApartmentName());
+                //ispis.setText(apartments.getApartment().get(0).getApartmentName());
+                String sApartment = "";
+
+                for (Apartment apartment : apartments.getApartment()){
+                    sApartment += apartment.getApartmentName() + ", ";
+                }
+                ispis.setText(sApartment);
 
             }
 
             @Override
             public void failure(RetrofitError error) {
-
+                error.printStackTrace();
             }
         });
     }
