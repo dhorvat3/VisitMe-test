@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.filip.modules.db">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        android:supportsRtl="true">
+
+        <meta-data android:name="AA_DB_NAME" android:value="visitme.db" />
+        <meta-data android:name="AA_DB_VERSION" android:value="1" />
+    </application>
+
+</manifest>
