@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import com.example.filip.modules.db.Town;
 
 public class JsonAdapter {
-    public static ArrayList<Town> getStores(String jsonString) {
+    public static ArrayList<Town> getTowns(String jsonString) {
         ArrayList<Town> towns = new ArrayList<Town>();
         try {
             JSONArray jsonArray = new JSONArray(jsonString);
