@@ -14,5 +14,5 @@ public interface NavigationItem {
     public int getPosition();
     public void setPosition(int position);
     public Fragment getFragment();
-    public void loadData(ArrayList<Town> stores);
+    public void loadData(ArrayList<Town> towns);
 }
