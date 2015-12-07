@@ -22,7 +22,7 @@ public class JsonAdapter {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
                 Town town = new Town(
                         jsonObject.getInt("id_town"),
-                        jsonObject.getString("town_name")
+                        jsonObject.getString("name")
 
                 );
                 towns.add(town);

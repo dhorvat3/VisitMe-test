@@ -1,7 +1,15 @@
 package com.example.filip.modules.loaders;
 
 import android.app.Activity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.widget.ExpandableListView;
+
 
 import com.example.filip.modules.core.DataLoader;
 import com.example.filip.modules.core.JsonAdapter;
@@ -43,6 +51,7 @@ public class WebServiceDataLoader extends DataLoader {
                     }
                     Toast.makeText(activity,"Towns loaded sucessfuly!", Toast.LENGTH_SHORT).show();
                     townsLoaded = true;
+                    showLoadedData();
 
                 }catch (Exception e){
                     Toast.makeText(activity, result, Toast.LENGTH_SHORT).show();
@@ -50,6 +59,8 @@ public class WebServiceDataLoader extends DataLoader {
 
             }
         }};
+
+
     private  void showLoadedData()
     {
         if (townsLoaded)

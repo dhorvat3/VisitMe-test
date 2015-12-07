@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Modules</string>
+    <string name="app_name">Visit Me</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="btn_details">Show details</string>
+    <string name="data_loaded_towns">Towns loaded successfully!</string>
+    <string name="data_loaded_apartments">Apartments loaded successfully!</string>
+    <string name="town_name">Naziv</string>
+
+    <string name="no">No</string>
+    <string name="q_delete_discount">Are you sure you want to delete discount?</string>
+    <string name="yes">Yes</string>
 </resources>
